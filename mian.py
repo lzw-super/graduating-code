@@ -1,3 +1,4 @@
 import torch  
 print('hellow world') 
-print(torch.cuda.is_available())
+print(torch.cuda.is_available()) 
+# test
