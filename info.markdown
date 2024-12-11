@@ -5,6 +5,19 @@
 ## 查论文 
 - letpub、 知网、 web of science、 ccf、 
 
+## pytorch 用法 
+### 数据 
+- dataset （加载数据及其标签）  dataloader（传入数据到模型 batch ）
+
 ## python info 
 - dir() 打开工具箱找工具  and help() 看工具箱的使用说明 
-- 
+- 当dir后只有__name__ 则表明这个就是一个小工具了，而不是更小的工具箱 
+- help 中工具或工具箱不需要带括号 带括号表示执行函数（工具） 
+  
+## tensorboard 用法
+### Tensorboard常用的四个功能 ：
+- graphs： 保存网络结构图；
+- scalars： 精确度，学习率，损失曲线；
+- histograms： 训练权重分布；
+- images： 展示图像信息。 
+
