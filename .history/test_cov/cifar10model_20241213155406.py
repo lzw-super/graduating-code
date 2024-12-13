@@ -39,13 +39,13 @@ for epoch in range(10) :
     loss = 0.0
     for data in data_l :
         imgs , target = data  
+        optim.zero_grad()   # 每个batch 归零梯度 
         output = mine(imgs)
-        optim.zero_grad()   # 每个batch_size 归零梯度 
         l = loss_f(output,target) 
         l.backward() 
         optim.step()
         loss = loss + l 
-    print('epoch = {}, loss = {}'.format(epoch+1, loss))
+    print('epoch = {}, loss = {}'.format(epoch, loss))
 
 
 

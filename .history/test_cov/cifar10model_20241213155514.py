@@ -37,10 +37,10 @@ optim =  torch.optim.SGD(mine.parameters(),0.01,)
 loss_f = nn.CrossEntropyLoss()
 for epoch in range(10) : 
     loss = 0.0
+    optim.zero_grad()   # 每个batch 归零梯度 
     for data in data_l :
         imgs , target = data  
         output = mine(imgs)
-        optim.zero_grad()   # 每个batch_size 归零梯度 
         l = loss_f(output,target) 
         l.backward() 
         optim.step()
